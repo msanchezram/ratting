@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>.:BASQUET-CHALLENGE:.</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/style_dark.css">  
+
+</head>
+<body class="body1" onload="carga()">
+<div class="header_class">
+  <img class="imgIcono" src="./images/logo-app.png">&nbsp;retting&nbsp;<a href="javascript:salir()"><img class="imgIcono" style="float:right;cursor:pointer" src="./images/volver-gris.png"></a>
+</div>
+<br>
+<!--
+<table>
+  <tr>
+    <td id="titulo" class="titulo">
+      Reto
+    </td>
+  </tr>
+  <tr><td><hr></htr></td></tr>
+</table>
+-->
+<table>
+  <tr>
+    <td id="nombre" colspan="2" class="titulo_rosa">&nbsp;</td>
+  </tr>
+  
+  <tr id="tr-cu" >
+    <td id="url" colspan="2">
+      
+      <iframe id="reto_frame" width="380" height="345" src=""></iframe>
+    </td>    
+  </tr>
+  <tr>
+    <td id="apodocreado"></td>
+    <td id="fecha"></td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr id="btnaceptar">
+    <td colspan="2">
+      <button onclick="save()">ACEPTAR RETO</button>
+    </td>
+  </tr>
+</table>
+<table>
+  <tr id="btnaceptarborrar">
+    <td style="width: 50%;">
+      <button class="buttoncrono" onclick="save()">ACEPTAR RETO</button>
+    </td>
+    <td style="width: 50%;">
+      <button class="buttoncrono" onclick="deletereto()">BORRAR RETO</button>
+    </td>
+  </tr>
+</table>
+<table>
+  <tr id="fechaetosuperado">
+    
+    <td>Fecha superado</td>
+    <td id="fecharetosuperado"></td>
+  </tr>
+  <tr id="urlretosuperado">
+    <td>Url reto superado</td>
+    <td style="text-align:left"><input type="text" class="input_dark" id="urlvideosuperado" placeholder="URL (Youtube) del vídeo del reto ..."></td>
+  </tr>
+  <tr id="urltituloejemploretosuperado">
+    <td colspan="2" class="font_gris">Ejemplo de Url</td>
+    
+  </tr>
+  <tr id="urlejemploretosuperado">
+    
+    <td colspan="2" class="font_gris">https://www.youtube.com/embed/U5SGvQ-hONI</td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr id="trbtnretosuperado">
+    <td style="width: 50%;">
+      <button id ="btnretosuperado" class="buttoncrono" onclick="updateRetoSuperado()">RETO SUPERADO</button>
+    </td>
+    <td style="width: 50%;">
+      <button id ="btnretosuperado" class="buttoncrono" onclick="deleteasignacionreto()">BORRAR RETO</button>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+  
+</table>
+<div id="snackbar">...</div>
+
+<script src="./js/util.js"></script>
+<script src="./js/crearretoDAO.js"></script>
+<script src="./js/reto.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>.:BASQUET-CHALLENGE:.</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/style_dark.css">  
+<link rel="stylesheet" href="./css/sidemenu.css">  
+
+</head>
+<body class="body1" onload="carga()">
+  
+<div class="header_class">
+  <img class="imgIcono" src="./images/logo-app.png">&nbsp;retting 
+  
+  <!--
+  <img class="imgIcono" src="./images/menu.png" style="float:right;cursor:pointer" onclick="openNav()" />
+  -->
+  <div class="container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+</div>
+
+<br>
+<table class="table_dark" id="tableretos">
+  <!--
+  <tr>
+    <td>
+      <a href="javascript:alert('Test');">
+      <table class="table_test">
+        <tr><td><font style="font-weight: bold;font-size:24px;color: #FFFFFF;">Paula</font></td></tr>
+        <tr><td>Joventut Les Corts 2020/21</td></tr>
+        <tr><td><font style="font-size:14px;">Cadete B Nivel B</font></td></tr>
+      </table>   
+      </a>   
+    </td>
+  </tr>
+-->
+</table>
+<div id="mySidenav" class="sidenav">
+  
+  <table style="width:100%">
+    <tr>
+      <td class="sidenav_td">
+        <input type="button" class="button_sidemenu"  onclick="location.href ='./configuracion.html';" value="CONFIGURACIÓN" />
+      </td>     
+    </tr>
+    <tr>
+      <td class="sidenav_td">
+        <input type="button" class="button_sidemenu"  onclick="location.href = './misretos.html';" value="MIS RETOS" />
+      </td>     
+    </tr>
+     <tr>
+      <td class="sidenav_td">
+        <input type="button" class="button_sidemenu"  onclick="location.href = './seguirchallengers.html';" value="SEGUIR CHALLENGERS" />
+      </td>     
+    </tr>
+    <tr>
+      <td class="sidenav_td">
+        <input type="button" class="button_sidemenu"  onclick="location.href = './notificaciones.html';" value="NOTIFICACIONES" />
+      </td>     
+    </tr>
+    <tr>
+      <td class="sidenav_td_last">
+        <input type="button" class="button_sidemenu"  onclick="location.href = './crearreto.html';" value="CREAR RETO" />
+      </td>     
+    </tr>
+    
+  </table> 
+</div>
+<div id="snackbar" class="snackbar_msg">...</div>
+<script src="./js/crearretoDAO.js"></script>
+<script src="./js/util.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

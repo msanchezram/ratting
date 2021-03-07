@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>.:BASQUET-CHALLENGE:.</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/style_dark.css">  
+
+</head>
+<body class="body1" onload="carga()">
+<div class="header_class">
+  <img class="imgIcono" src="./images/logo-app.png">&nbsp;retting&nbsp;<a href="javascript:salir()"><img class="imgIcono" style="float:right;cursor:pointer" src="./images/volver-gris.png"></a>
+</div>
+<br>
+<table>
+  <tr>
+    <td id="titulo" class="titulo">
+      Crear Reto
+    </td>
+  </tr>
+  <tr><td><hr></htr></td></tr>
+</table>
+<br>
+<table>
+  <tr>
+    <td>Nombre</td>
+    <td style="text-align:left"><input type="text" class="input_dark" id="nombrereto" placeholder="nombre del reto ..."></td>
+  </tr>
+  <tr>
+    <td>URL</td>
+    <td style="text-align:left"><input type="text" class="input_dark" id="urlvideo" placeholder="URL (Youtube) del vídeo del reto ..."></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="font_gris">https://www.youtube.com/embed/U5SGvQ-hONI</td>
+  </tr>
+  <tr>
+    <td>Dificultad</td>
+    <td style="text-align:left"><input type="text" class="input_dark" id="dificultad" placeholder="1-5 -> 1 fácil, 5 dificilísimo"></td>
+  </tr>
+  <tr>
+    <td>Inicio</td>
+    <td style="text-align:left"><input type="text" class="input_dark" id="tiempoinicio" placeholder="tiempo inicio en segundos ..."></td>
+  </tr>
+  <tr>
+    <td>Final</td>
+    <td style="text-align:left"><input type="text" class="input_dark" id="tiempofinal" placeholder="tiempo final en segundos ..."></td>
+  </tr>
+</table>
+<table>
+  <tr><td colspan="2">&nbsp;</td></tr>
+  <tr><td colspan="2">&nbsp;</td></tr>
+  <tr>
+    <td style="width: 50%;"><button class="buttoncrono" onclick="accept()">ACEPTAR</button></td>
+    <td style="width: 50%;"><button class="buttoncrono" onclick="verprevio()">VER PREVIO</button></td>
+  </tr>
+</table>
+<div id="snackbar">...</div>
+<script src="./js/util.js"></script>
+<script src="./js/crearretoDAO.js"></script>
+<script src="./js/crearreto.js"></script>
+</body>
+</html>

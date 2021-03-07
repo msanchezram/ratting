@@ -1,0 +1,13 @@
+window.localStorage.clave//guarda la clave de usuario en firebase
+window.localStorage.mail //guarda el mail del usuario
+window.localStorage.fnac //guarda la fecha de nacimiento del usuario
+window.localStorage.apodo //apodo del usuario 
+
+window.localStorage.listamisretos //los retos del usuarios
+
+//ver reto
+window.sessionStorage.listaretos //listado de retos a realizar
+window.sessionStorage.retoselected // guarda el objeto RETO a tratar
+
+//crearreto
+window.sessionStorage.verreto //guarda el reto que vamos a visualizar en el previo
